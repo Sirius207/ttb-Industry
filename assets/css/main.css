@@ -154,6 +154,10 @@ body {
     vertical-align: middle;
 }
 
+.head-padding {
+    padding: 50px 0px;
+}
+
 nav {
     position: fixed;
     z-index: 10;
@@ -196,13 +200,8 @@ nav i {
     text-align: center;
 }
 
-#about {
-    margin: 50px 0px;
-}
-
 #different {
     background-color: #f00078;
-    padding: 50px 0px;
 }
 
 #different h1 {
@@ -242,11 +241,22 @@ nav i {
     margin: 0 auto;
     padding: 1 4px;
     width: 70%;
+    border-radius: 5px;
+}
+
+.title h5:hover {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black;
+    color: black;
 }
 
 .title h5 {
     line-height: normal;
-    margin: 30px 10px;
+    margin: 30px 0px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .speaker-fb {
@@ -257,6 +267,9 @@ nav i {
     /*margin-top: 0px;*/
     font-size: 13px;
 }
+
+
+/*image hover effect*/
 
 .box {
     cursor: pointer;
@@ -296,7 +309,7 @@ nav i {
     width: 100%;
     height: 100%;
     text-align: left;
-    padding: 30px;
+    padding: 10px 15px;
     /*border-radius: 50%;*/
 }
 
@@ -343,6 +356,9 @@ footer a {
     margin-right: 20px;
     line-height: normal;
 }
+
+
+/* down arrow icon*/
 
 html body [data-ca3_iconfont="ETmodules"]::before {
     font-family: "ETmodules";
