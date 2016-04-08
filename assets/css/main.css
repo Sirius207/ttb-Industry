@@ -189,6 +189,10 @@ nav i {
     z-index: 1;
 }
 
+#top h5 {
+    line-height: normal;
+}
+
 .image-mask {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
@@ -318,7 +322,7 @@ nav i {
 }
 
 #prepare {
-    background: url(https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg) no-repeat center center fixed;
+    background: url(../images/people-woman-coffee-meeting.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -336,7 +340,7 @@ nav i {
 
 #prepare .mask {
     background-color: black;
-    opacity: 0.83;
+    opacity: 0.7;
 }
 
 #map iframe {
@@ -349,7 +353,7 @@ footer {
     color: white;
     height: 50px;
     margin-top: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 footer a {
