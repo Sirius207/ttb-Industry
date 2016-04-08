@@ -1,0 +1,402 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'cwTeXHei';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "微軟正黑體", 'cwTeXHei', serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav-wrapper {
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #f00078;
+    font-weight: bold;
+}
+
+#top {
+    background: url(../images/meeting_13.jpg) no-repeat center center fixed;
+    color: white;
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-shadow: 1px 0px 0 gray;
+}
+
+.image-mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#about {
+    margin: 50px;
+}
+
+#different {
+    background-color: #f00078;
+    padding: 50px;
+}
+
+#different h1 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.icon img {
+    width: 80%;
+}
+
+.mask {
+    background-color: green;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    color: white;
+    margin-top: 10px;
+    padding: 10px 30px;
+    text-shadow: 0 0 0 black;
+}
+
+.mask h5 {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 0 gray;
+}
+
+.slogan {
+    color: gray;
+}
+
+.title {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #f00078;
+    color: white;
+    margin: 0 auto;
+    padding: 1 4px;
+    width: 70%;
+}
+
+.title h5 {
+    line-height: normal;
+    margin: 30px 10px;
+}
+
+.speaker-fb {
+    color: white;
+}
+
+.box {
+    cursor: pointer;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+}
+
+.box img {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.box .caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+
+.fade-caption {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.box:hover .fade-caption {
+    opacity: 1;
+}
+
+#prepare {
+    background: url(https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:
+}
+
+#prepare h1 {
+    color: white;
+    text-shadow: 1px 1px 0 black;
+}
+
+#prepare .mask {
+    background-color: black;
+    opacity: 0.83;
+}
+
+footer {
+    background-color: black;
+    box-shadow: 5px 0px 0px 2px rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: white;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+footer a {
+    margin-right: 20px;
+}
+
+html body [data-ca3_iconfont="ETmodules"]::before {
+    font-family: "ETmodules";
+}
+
+[data-ca3_icon]::before {
+    font-weight: normal;
+    content: attr(data-ca3_icon);
+}
+
+.ca3-scroll-down-arrow {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+    cursor: pointer;
+    height: 60px;
+    width: 80px;
+    margin: 0px 0 100px -30px;
+    line-height: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 70px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+    -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
+    animation: ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+
+@-webkit-keyframes ca3_fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes ca3_fade_move_down {
+    0% {
+        -moz-transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes ca3_fade_move_down {
+    0% {
+        transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
