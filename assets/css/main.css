@@ -131,13 +131,15 @@ table {
     border-spacing: 0;
 }
 
-@font-face {
+
+/*@font-face {
     font-family: 'cwTeXHei';
     font-style: normal;
     font-weight: 500;
     src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
     src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
 }
+*/
 
 html,
 body {
@@ -238,6 +240,10 @@ body {
 
 .speaker-fb {
     color: white;
+}
+
+.speaker-fb p {
+    margin-top: 30px;
 }
 
 .box {
