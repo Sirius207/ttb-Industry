@@ -11,10 +11,8 @@ $(document).ready(function() {
             }
         }
     });
+    $('#top').parallax("50%", 0.6);
+    $('#prepare').parallax("50%", 0.3);
 
-    $('body').scrollspy({
-        target: '#navbar',
-        offset: 0
-    });
 
 });
