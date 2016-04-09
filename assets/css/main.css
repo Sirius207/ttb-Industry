@@ -131,21 +131,11 @@ table {
     border-spacing: 0;
 }
 
-
-/*@font-face {
-    font-family: 'cwTeXHei';
-    font-style: normal;
-    font-weight: 500;
-    src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
-    src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
-}
-*/
-
 html,
 body {
     height: 100%;
     width: 100%;
-    font-family: "微軟正黑體", 'cwTeXHei', serif;
+    font-family: "微軟正黑體";
 }
 
 .text-vertical-center {
@@ -158,9 +148,33 @@ body {
     padding: 50px 0px;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.small-icon {
+    height: 50px;
+}
+
+.slogan {
+    color: gray;
+}
+
+.line-height {
+    line-height: normal;
+}
+
 nav {
     position: fixed;
     z-index: 10;
+}
+
+nav i {
+    margin-left: 15px;
 }
 
 .nav-wrapper {
@@ -169,12 +183,8 @@ nav {
     font-weight: bold;
 }
 
-nav i {
-    margin-left: 15px;
-}
-
 #top {
-    background: url(../images/meeting_14.jpg) no-repeat center center fixed;
+    background: url(../images/meeting_15.jpg) no-repeat center center fixed;
     color: white;
     display: table;
     height: 100%;
@@ -189,19 +199,11 @@ nav i {
     z-index: 1;
 }
 
-#top h5 {
-    line-height: normal;
-}
-
 .image-mask {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     padding: 5px;
     width: 100%;
-}
-
-.text-center {
-    text-align: center;
 }
 
 #different {
@@ -232,10 +234,6 @@ nav i {
     color: white;
     text-align: center;
     text-shadow: 0 0 0 gray;
-}
-
-.slogan {
-    color: gray;
 }
 
 .title {
@@ -348,11 +346,7 @@ nav i {
 }
 
 #host img {
-    width: 100%;}
-
-
-.small {
-    height: 50px;
+    width: 100%;
 }
 
 footer {
@@ -365,8 +359,12 @@ footer {
 }
 
 footer a {
-    margin-right: 20px;
+    margin: 0 5px;
     line-height: normal;
+}
+
+footer .row {
+    margin-bottom: 0px;
 }
 
 
@@ -395,7 +393,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     line-height: 60px;
     position: absolute;
     left: 50%;
-    bottom: 45px;
+    bottom: 10px;
     color: #FFF;
     text-align: center;
     font-size: 70px;
