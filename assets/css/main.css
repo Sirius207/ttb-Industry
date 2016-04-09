@@ -200,7 +200,7 @@ nav i {
 }
 
 .image-mask {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.35);
     margin: 0 auto;
     padding: 5px;
     width: 100%;
@@ -361,6 +361,7 @@ footer {
 footer a {
     margin: 0 5px;
     line-height: normal;
+    word-wrap: break-word;
 }
 
 footer .row {
